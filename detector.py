@@ -16,9 +16,6 @@ warnings.filterwarnings('ignore')
 
 
 class DetectorEmocional:
-    """
-    Clase para detectar estados emocionales usando un modelo LLM.
-    """
     
     def __init__(self):
         """
