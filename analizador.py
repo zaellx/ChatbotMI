@@ -20,6 +20,7 @@ def analizar_texto(texto):
     # Convertir a minúsculas
     texto_limpio = texto.lower().strip()
     
+    #LOS CAMBIOS SE REALIZARON AQUI
     # Eliminar caracteres especiales pero mantener puntuación básica
     texto_limpio = re.sub(r'[^\w\sáéíóúñ.,!?]', '', texto_limpio)
     

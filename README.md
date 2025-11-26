@@ -1,8 +1,8 @@
-# 🤖 Chatbot Emocional con LLM
+# Chatbot Emocional con LLM
 
 Sistema de análisis emocional para estudiantes universitarios que detecta señales de ansiedad, estrés o depresión y proporciona recomendaciones personalizadas.
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 ChatbotMINV/
@@ -16,7 +16,7 @@ ChatbotMINV/
 └── README.md              # Este archivo
 ```
 
-## 📦 Módulos
+## Módulos
 
 ### 1. `config.py`
 
@@ -67,7 +67,7 @@ Archivo principal de ejecución:
 - 4 casos de uso predefinidos
 - Modo interactivo (opcional)
 
-## 🚀 Uso
+## Uso
 
 ### Ejecución básica:
 
@@ -96,14 +96,14 @@ print(f"Estado: {respuesta['estado_detectado']}")
 print(respuesta['mensaje_completo'])
 ```
 
-## 🎯 Estados Detectados
+## Estados Detectados
 
 - **Ansiedad**: Nerviosismo, preocupación, angustia
 - **Estrés**: Presión, sobrecarga, agotamiento
 - **Depresión**: Tristeza, desmotivación, vacío
 - **Neutral**: Estado equilibrado
 
-## 📋 Funciones Principales
+## Funciones Principales
 
 ### `analizar_texto(texto)`
 
@@ -145,14 +145,14 @@ respuesta = {
 }
 ```
 
-## 🔧 Dependencias
+## Dependencias
 
 - Python 3.8+
 - transformers
 - torch
 - re (built-in)
 
-## 💡 Ejemplos de Salida
+## Ejemplos de Salida
 
 El sistema procesa 4 ejemplos automáticamente:
 
@@ -169,7 +169,7 @@ Cada uno muestra:
 - Técnicas específicas
 - Análisis técnico
 
-## 🤝 Características
+## Características
 
 ✅ Arquitectura modular y escalable
 ✅ Separación de responsabilidades
@@ -178,7 +178,7 @@ Cada uno muestra:
 ✅ Configuración centralizada
 ✅ Reutilización de componentes
 
-## 📝 Notas
+## Notas
 
 - El modelo BETO está optimizado para español
 - Las recomendaciones están basadas en técnicas psicológicas validadas

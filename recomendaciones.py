@@ -32,7 +32,7 @@ def obtener_recomendacion_ansiedad():
         dict: Recomendación estructurada
     """
     return {
-        'titulo': '🌬️ Técnicas para Reducir la Ansiedad',
+        'titulo': 'Técnicas para Reducir la Ansiedad',
         'mensaje': 'Entiendo que te sientes ansioso/a. Es normal sentirse así, especialmente durante la universidad.',
         'tecnicas': [
             '**Respiración 4-7-8**: Inhala por 4 segundos, mantén 7 segundos, exhala por 8 segundos. Repite 4 veces.',
@@ -41,7 +41,7 @@ def obtener_recomendacion_ansiedad():
             '**Ejercicio físico**: Una caminata de 10-15 minutos puede reducir significativamente la ansiedad.',
             '**Visualización**: Imagina un lugar seguro y tranquilo. Visualiza cada detalle con tus sentidos.'
         ],
-        'recordatorio': '💙 Recuerda: La ansiedad es temporal. Tú eres más fuerte de lo que crees.'
+        'recordatorio':  'Recuerda: La ansiedad es temporal. Tú eres más fuerte de lo que crees.'
     }
 
 
@@ -53,7 +53,7 @@ def obtener_recomendacion_estres():
         dict: Recomendación estructurada
     """
     return {
-        'titulo': '⚡ Estrategias para Manejar el Estrés',
+        'titulo': 'Estrategias para Manejar el Estrés',
         'mensaje': 'Noto que estás bajo mucho estrés. Es importante que tomes un momento para ti.',
         'tecnicas': [
             '**Respiración diafragmática**: Coloca una mano en tu pecho y otra en tu abdomen. Respira profundo haciendo que solo se mueva el abdomen.',
@@ -63,7 +63,7 @@ def obtener_recomendacion_estres():
             '**Desconexión digital**: Apaga notificaciones por 30 minutos mientras estudias o trabajas.',
             '**Organización**: Divide proyectos grandes en tareas pequeñas y manejables.'
         ],
-        'recordatorio': '💚 Recuerda: No puedes llenar de una jarra vacía. Cuídate primero.'
+        'recordatorio': 'Recuerda: No puedes llenar de una jarra vacía. Cuídate primero.'
     }
 
 
@@ -75,7 +75,7 @@ def obtener_recomendacion_depresion():
         dict: Recomendación estructurada
     """
     return {
-        'titulo': '🌟 Apoyo para Momentos Difíciles',
+        'titulo': 'Apoyo para Momentos Difíciles',
         'mensaje': 'Veo que estás pasando por un momento difícil. Quiero que sepas que no estás solo/a.',
         'tecnicas': [
             '**Rutina matutina**: Establece una hora fija para despertar y una actividad placentera (música, ducha, desayuno).',
@@ -85,8 +85,8 @@ def obtener_recomendacion_depresion():
             '**Pequeños logros**: Celebra cada tarea completada, sin importar cuán pequeña sea.',
             '**Luz natural**: Exponte a la luz del sol al menos 15 minutos al día.'
         ],
-        'recordatorio': '💜 Recuerda: Está bien no estar bien. Considera hablar con un profesional si estos sentimientos persisten.',
-        'recursos': '📞 Línea de apoyo psicológico universitario: Consulta en tu institución.'
+        'recordatorio': 'Recuerda: Está bien no estar bien. Considera hablar con un profesional si estos sentimientos persisten.',
+        'recursos': 'Línea de apoyo psicológico universitario: Consulta en tu institución.'
     }
 
 
@@ -98,7 +98,7 @@ def obtener_recomendacion_neutral():
         dict: Recomendación estructurada
     """
     return {
-        'titulo': '😊 ¡Todo en Orden!',
+        'titulo': '¡Todo en Orden!',
         'mensaje': '¡Me alegra saber que te encuentras bien! Aquí estoy si necesitas algo.',
         'tecnicas': [
             '**Mantén el equilibrio**: Sigue con tus rutinas saludables de sueño, alimentación y ejercicio.',
@@ -107,7 +107,7 @@ def obtener_recomendacion_neutral():
             '**Autocuidado**: Dedica tiempo a actividades que disfrutes.',
             '**Reflexión**: Lleva un diario de emociones para identificar patrones.'
         ],
-        'recordatorio': '💛 Recuerda: El bienestar es un proceso continuo. Sigue cuidándote.'
+        'recordatorio': 'Recuerda: El bienestar es un proceso continuo. Sigue cuidándote.'
     }
 
 
@@ -123,7 +123,7 @@ def formatear_respuesta(recomendacion):
     """
     mensaje = f"\n{recomendacion['titulo']}\n\n"
     mensaje += f"{recomendacion['mensaje']}\n\n"
-    mensaje += "📋 **Técnicas recomendadas:**\n\n"
+    mensaje += "**Técnicas recomendadas:**\n\n"
     
     for i, tecnica in enumerate(recomendacion['tecnicas'], 1):
         mensaje += f"{i}. {tecnica}\n\n"
