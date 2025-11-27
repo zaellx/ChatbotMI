@@ -63,20 +63,26 @@ def main():
     print("Demostracion completada")
     print("=" * 60)
     
-    # modo interactivo
+    # -------------------------
+    #      MODO INTERACTIVO
+    # -------------------------
     print("\n¿Deseas probar el chatbot de forma interactiva? (s/n): ", end='')
-    # Descomenta las siguientes líneas para modo interactivo:
-    # respuesta_usuario = input().strip().lower()
-    # if respuesta_usuario == 's':
-    #     print("\nEscribe 'salir' para terminar\n")
-    #     while True:
-    #         mensaje = input("Tú: ").strip()
-    #         if mensaje.lower() == 'salir':
-    #             print("¡Cuídate! Recuerda que tu bienestar es importante.")
-    #             break
-    #         if mensaje:
-    #             respuesta = chatbot.responder_usuario(mensaje)
-    #             print(f"\nChatbot:{respuesta['mensaje_completo']}\n")
+    
+    respuesta_usuario = input().strip().lower()
+
+    if respuesta_usuario == 's':
+        print("\nEscribe 'salir' para terminar\n")
+        while True:
+            mensaje = input("Tú: ").strip()
+
+            if mensaje.lower() == 'salir':
+                print("¡Cuídate! Recuerda que tu bienestar es importante.")
+                break
+
+            if mensaje:
+                respuesta = chatbot.responder_usuario(mensaje)
+                print(f"\nChatbot: {respuesta['mensaje_completo']}\n")
+
 
 if __name__ == "__main__":
     main()
